@@ -1,0 +1,80 @@
+/*IMPORT FONTS AND EXTERNAL*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
+
+
+/*IMPORT ALL INDIVIDUAL COMPONENTS*/
+@import url('../components/avatar.css');
+@import url('../components/buttons.css');
+@import url('../components/banners.css');
+
+/*SET CSS STYLE FOR GENERAL PAGES*/
+.container {
+	width: 800px;
+	margin: 20px auto;
+}
+
+.container-bnb {
+		background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: auto;
+    border: solid;
+    border-color: #e1dede;
+    position: relative;
+    top: 80%;
+}
+
+.container-revolution-title {
+	background-color: white;
+	display: flex;
+	height: 150px;
+	width: auto;
+	text-align: center;
+	border-color: #e1dede;
+}
+
+/* .container-revolution-nav  */
+
+.card-category-container {
+	height: 1000px;
+	width: auto;
+	margin: 20px auto;
+}
+
+
+.card-product-container {
+	height: 1000px;
+	margin: 20px auto;
+}
+
+.card-category-title {
+	color: white;
+	top: 50%;
+	left: 50%;
+	position: relative;
+}
+
+.card-product-title {
+	text-shadow: bottom;
+	color: white;
+	top: 50%;
+	left: 50%;
+	position: relative;
+}
+
+.text-center {
+	text-align: center;
+}
+
+body, p {
+	font-family: 'Raleway', sans-serif;
+	color: rgba(30, 30, 30, 0.9);
+	/*size: 14px*/
+}
+
+h1 {
+	font-family: 'Poppins';
+	color: rgba(30, 30, 30, 0.9);
+}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <title>Add Book</title>
+    <link rel="stylesheet" href="static/css/style2.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')  }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <div class="banner-add-book ">
+      <div class="container ">
+        <form action="/book-added" method="post">
+          <div class="row">
+          	<div class="col bg-secondary">
+              <label class="bg-secondary p-1 mt-2 color-white" for="book-title">Book Title</label>
+	            <input type="text" id="book-title" name="book-title" class="form-control" placeholder="Title">
+	          </div>
+          </div>
+	      <div class="row">
+	        <div class="col">
+            <label class="mt-2" for="book-author">Author</label>
+	          <input type="text" id="book-author" name="first-name" class="form-control" placeholder="First Name">
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="col">
+	          <input type="text" name="last-name" class="form-control mt-2" placeholder="Last Name">
+	        </div>
+	      </div>
+	      <div class="row">
+	      	<div class="col">
+            <label class="mt-2" for="pub-year">Date Published</label>
+	          <input type="text" id="pub-year" name="pub-year" class="form-control" placeholder="Date">
+	        </div>
+         </div>
+         <input class="mt-2" type="submit" value="Submit">
+
+	      </form>
+      </div>
+    </div>
+{% endblock content %}
